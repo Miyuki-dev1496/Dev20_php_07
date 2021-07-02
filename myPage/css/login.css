@@ -1,0 +1,84 @@
+body {
+    color: #000000;
+    background-color: #656665;
+    background-image: url("../image/login_bg.jpg");  
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+.bg_rgba {
+    width:100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.267);
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login {
+    line-height: 30px;
+    padding: 0 5px;
+    color: white;
+    cursor: pointer;
+    display: block;
+  }
+
+.login-modal-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display:none;
+    
+}
+
+.modal {
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    background-color: rgba(255, 255, 255, 0.267);
+    padding: 20px 0 40px;
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+    text-align: center;
+}
+
+.modal li{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+    
+#submit-btn {
+    display: inline-block;
+    padding: 14px 100px;
+    background-color: #3a3a41;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin: 10px auto;
+    cursor: pointer;
+  }
+
+
+.login{
+    margin-left: 200px;
+    width:200px;
+    height:250px;
+
+}
+
+/* .login label{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+

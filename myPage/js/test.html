@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raty</title>
+  </head>
+  <body></body>
+</html>
+<div class="rating" id = "id-AAA">AAA 
+    
+</div>
+<div class="rating"  id = "id-BBB">BBB </div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="https://cdn.tutorialjinni.com/raty/3.0.0/jquery.raty.js"></script> -->
+<script type="text/javascript" src="./lib/jquery.raty.js"></script>
+<script type="text/javascript">
+
+    // var score = $(function(){
+    // $('.rating').raty();
+   
+// });
+  $('.rating').raty({
+     click: function(score, evt) {
+      console.log(this); //これでどの要素をクリックしたか取れます
+      console.log(this.id); //idが取れます
+      console.log(score); //設定したスコアが取れます
+          // alert("score: " + score + "\nevent: " + evt.type);
+     }
+});
+</script>
